@@ -1,61 +1,55 @@
-# HomeHubServer
+# Smart Home Server
 
-Core backend server for smart home automation and monitoring system. Handles device control, data collection, and client communications.
+Home Assistant based smart home server with custom integrations and API endpoints.
 
-## Requirements
+## Components
 
-- Node.js 20+
-- MongoDB 7.0+
-- Redis 7.0+
+- Home Assistant Core
+- PostgreSQL Database
+- MQTT Broker
+- Homebridge Integration
+- Custom API Integrations
 
-## Setup
+## Directory Structure
 
-```bash
-# Install dependencies
-npm install
-
-# Set up environment variables
-cp .env.example .env
-
-# Start development server
-npm run dev
-
-# Start production server
-npm run start
+```
+home-server/
+├── config/
+│   ├── configuration.yaml    # Main HA config
+│   ├── secrets.yaml         # Sensitive data
+│   ├── automations.yaml     # Automation rules
+│   └── integrations/        # Integration configs
+├── custom_components/       # Custom integrations
+│   └── api_fetcher/        # External API handler
+├── themes/                  # UI themes
+├── www/                    # Static files
+└── docker/                 # Deployment configs
 ```
 
 ## Features
 
-- REST API for device control
-- Real-time device state updates
-- User authentication
-- Device state persistence
-- Integration with Homebridge
-- Environmental monitoring
-- Activity tracking
-- Media streaming control
+- Device Control & Monitoring
+- External API Integration (Weather, Stocks)
+- Custom REST API for iOS Apps
+- Homebridge Integration
+- Activity & Usage Analytics
 
-## Project Structure
+## Setup
 
-```
-src/
-├── api/          # API routes
-├── config/       # Configuration files
-├── controllers/  # Request handlers
-├── models/       # Database models
-├── services/     # Business logic
-├── types/        # TypeScript types
-└── utils/        # Helper functions
-```
-
-## API Documentation
-
-API documentation available at `/api/docs` when running in development mode.
+1. Install Home Assistant
+2. Configure PostgreSQL
+3. Set up MQTT broker
+4. Configure Homebridge integration
+5. Add custom components
 
 ## Development
 
-Development setup recommended on macOS or Linux. Built using TypeScript for type safety and better development experience.
+Development environment requires:
+- Python 3.10+
+- PostgreSQL 14+
+- MQTT Broker
+- Node.js 18+ (for Homebridge)
 
-## Deployment
+## API Documentation
 
-Designed to run on Linux (Ubuntu recommended) in a VM environment with Node.js process manager (PM2).
+Access API documentation at `http://server-ip:8123/api/docs`

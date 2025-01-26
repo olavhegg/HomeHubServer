@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "minor_version": 4,
+  "key": "core.config_entries",
+  "data": {
+    "entries": [
+      {"created_at":"2025-01-26T19:58:48.433699+00:00","data":{},"disabled_by":null,"discovery_keys":{},"domain":"shopping_list","entry_id":"01JJJ340KH67936W31T18Q472D","minor_version":1,"modified_at":"2025-01-26T19:58:48.433705+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"onboarding","title":"Shopping list","unique_id":"shopping_list","version":1},
+      {"created_at":"2025-01-26T19:58:48.461271+00:00","data":{"track_home":true},"disabled_by":null,"discovery_keys":{},"domain":"met","entry_id":"01JJJ340MDYQCPA3WZ69Y9JSPD","minor_version":1,"modified_at":"2025-01-26T19:58:48.461276+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"onboarding","title":"Home","unique_id":null,"version":1},
+      {"created_at":"2025-01-26T19:58:48.606955+00:00","data":{},"disabled_by":null,"discovery_keys":{},"domain":"radio_browser","entry_id":"01JJJ340RYK2S0KYWREWCZNKNY","minor_version":1,"modified_at":"2025-01-26T19:58:48.606960+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"onboarding","title":"Radio Browser","unique_id":null,"version":1},
+      {"created_at":"2025-01-26T19:58:48.611458+00:00","data":{"language":"en","tld":"com"},"disabled_by":null,"discovery_keys":{},"domain":"google_translate","entry_id":"01JJJ340S311Q7CJA3GCWQYEVG","minor_version":1,"modified_at":"2025-01-26T19:58:48.611462+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"onboarding","title":"Google Translate text-to-speech","unique_id":null,"version":1},
+      {"created_at":"2025-01-26T20:07:35.531866+00:00","data":{"name":"Homebridge 4F68","pin":"457-64-408","port":51608},"disabled_by":null,"discovery_keys":{},"domain":"homekit","entry_id":"01JJJ3M3BBPQ236CDJ6X7C6E60","minor_version":1,"modified_at":"2025-01-26T20:09:56.189752+00:00","options":{"entity_config":{},"filter":{"exclude_domains":[],"exclude_entities":[],"exclude_entity_globs":[],"include_domains":[],"include_entities":[],"include_entity_globs":[]},"mode":"bridge"},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"import","title":"Homebridge 4F68:51608","unique_id":null,"version":1},
+      {"created_at":"2025-01-26T20:34:36.398971+00:00","data":{"broker":"mqtt","discovery":true,"password":"fredrik","port":1883,"username":"olav"},"disabled_by":null,"discovery_keys":{},"domain":"mqtt","entry_id":"01JJJ55J7E5R2W6CPTSCNXZNJX","minor_version":1,"modified_at":"2025-01-26T20:34:36.398977+00:00","options":{},"pref_disable_new_entities":false,"pref_disable_polling":false,"source":"user","title":"mqtt","unique_id":null,"version":1}
+    ]
+  }
+}

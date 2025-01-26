@@ -1,0 +1,49 @@
+version: '3'
+services:
+  homeassistant:
+    container_name: home-assistant
+    image: ghcr.io/home-assistant/home-assistant:stable
+    volumes:
+      - ../config:/config
+      - ../custom_components:/config/custom_components
+      - ../themes:/config/themes
+      - ../www:/config/www
+    environment:
+      - TZ=Europe/Oslo
+    ports:
+      - "8123:8123"
+    restart: unless-stopped
+    depends_on:
+      - postgres
+      - mqtt
+
+  postgres:
+    container_name: postgres
+    image: postgres:14
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=homeassistant
+      - POSTGRES_USER=homeassistant
+      - POSTGRES_PASSWORD=homeassistant
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+
+  mqtt:
+    container_name: mqtt
+    image: eclipse-mosquitto:latest
+    volumes:
+      - mosquitto_data:/mosquitto/data
+      - mosquitto_log:/mosquitto/log
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - ./mosquitto_passwd:/mosquitto/config/passwd
+    ports:
+      - "1883:1883"
+      - "9001:9001"
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  mosquitto_data:
+  mosquitto_log:

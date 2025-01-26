@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "homekit.01JJJ3M3BBPQ236CDJ6X7C6E60.aids",
+  "data": {
+    "allocations": {
+      "person.person.olav_heggelund": 78793049,
+      "zone.home": 2125305288,
+      "met.weather.home": 2046207052,
+      "google_translate.tts.01JJJ340S311Q7CJA3GCWQYEVG": 100358584,
+      "shopping_list.todo.01JJJ340KH67936W31T18Q472D": 3952381126,
+      "person.person.fredrik_aasland": 2649312965
+    }
+  }
+}

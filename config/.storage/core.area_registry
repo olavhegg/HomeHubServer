@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "minor_version": 7,
+  "key": "core.area_registry",
+  "data": {
+    "areas": [
+      {
+        "aliases": [],
+        "floor_id": null,
+        "icon": null,
+        "id": "stue",
+        "labels": [],
+        "name": "Stue",
+        "picture": null,
+        "created_at": "2025-01-26T19:58:29.141170+00:00",
+        "modified_at": "2025-01-26T19:58:29.141172+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "icon": null,
+        "id": "kjokken",
+        "labels": [],
+        "name": "Kjøkken",
+        "picture": null,
+        "created_at": "2025-01-26T19:58:29.141887+00:00",
+        "modified_at": "2025-01-26T19:58:29.141888+00:00"
+      },
+      {
+        "aliases": [],
+        "floor_id": null,
+        "icon": null,
+        "id": "soverom",
+        "labels": [],
+        "name": "Soverom",
+        "picture": null,
+        "created_at": "2025-01-26T19:58:29.141935+00:00",
+        "modified_at": "2025-01-26T19:58:29.141936+00:00"
+      }
+    ]
+  }
+}

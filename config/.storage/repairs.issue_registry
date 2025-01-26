@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "minor_version": 2,
+  "key": "repairs.issue_registry",
+  "data": {
+    "issues": [
+      {
+        "created": "2025-01-26T19:56:53.300704+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "platform_integration_no_support_weather_met"
+      },
+      {
+        "created": "2025-01-26T20:07:35.420748+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "config_entry_only_apple_tv"
+      },
+      {
+        "created": "2025-01-26T20:07:35.642258+00:00",
+        "dismissed_version": null,
+        "domain": "homeassistant",
+        "is_persistent": false,
+        "issue_id": "platform_integration_no_support_media_player_webostv"
+      }
+    ]
+  }
+}

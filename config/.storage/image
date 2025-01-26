@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "image",
+  "data": {
+    "items": [
+      {
+        "id": "8df1ae4b92c36da676f04ff24d0216e3",
+        "filesize": 77812,
+        "content_type": "image/jpeg",
+        "name": "ferrr.jpg",
+        "uploaded_at": "2025-01-26T20:25:29.714735+00:00"
+      },
+      {
+        "id": "3e7c4239b8c3dd9b2610b5f101071b55",
+        "filesize": 31073,
+        "content_type": "image/jpeg",
+        "name": "nazi-party-flag-1.jpg",
+        "uploaded_at": "2025-01-26T20:39:01.508915+00:00"
+      }
+    ]
+  }
+}

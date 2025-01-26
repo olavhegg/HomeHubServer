@@ -1,0 +1,18 @@
+2025-01-26 21:30:31.401 WARNING (MainThread) [homeassistant.components.switch] Platform rest not ready yet: No route to resource/endpoint: http://192.168.0.97:3000/arc; Retrying in background in 30 seconds
+2025-01-26 21:30:31.511 ERROR (MainThread) [homeassistant.config] Invalid config for 'mqtt' at configuration.yaml, line 38: 'broker' is an invalid option for 'mqtt', check: mqtt->0->broker, please check the docs at https://www.home-assistant.io/integrations/mqtt
+Invalid config for 'mqtt' at configuration.yaml, line 39: 'port' is an invalid option for 'mqtt', check: mqtt->0->port, please check the docs at https://www.home-assistant.io/integrations/mqtt
+Invalid config for 'mqtt' at configuration.yaml, line 40: 'client_id' is an invalid option for 'mqtt', check: mqtt->0->client_id, please check the docs at https://www.home-assistant.io/integrations/mqtt
+Invalid config for 'mqtt' at configuration.yaml, line 43: 'discovery' is an invalid option for 'mqtt', check: mqtt->0->discovery, please check the docs at https://www.home-assistant.io/integrations/mqtt
+Invalid config for 'mqtt' at secrets.yaml, line 12: 'username' is an invalid option for 'mqtt', check: mqtt->0->username, please check the docs at https://www.home-assistant.io/integrations/mqtt
+Invalid config for 'mqtt' at secrets.yaml, line 13: 'password' is an invalid option for 'mqtt', check: mqtt->0->password, please check the docs at https://www.home-assistant.io/integrations/mqtt
+2025-01-26 21:30:31.511 ERROR (MainThread) [homeassistant.setup] Setup failed for 'mqtt': Invalid config.
+2025-01-26 21:30:31.737 ERROR (MainThread) [homeassistant] Error doing job: Task exception was never retrieved (None)
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/components/device_tracker/legacy.py", line 258, in _async_setup_integration
+    legacy_platforms = await async_extract_config(hass, config)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/src/homeassistant/homeassistant/components/device_tracker/legacy.py", line 393, in async_extract_config
+    raise ValueError(
+        f"Unable to determine type for {platform.name}: {platform.type}"
+    )
+ValueError: Unable to determine type for ping: None

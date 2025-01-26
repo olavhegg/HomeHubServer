@@ -1,0 +1,49 @@
+# Core Configuration
+homeassistant:
+  name: Smart Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: !secret elevation
+  unit_system: metric
+  time_zone: Europe/Oslo
+  currency: NOK
+
+# Database
+recorder:
+  db_url: postgresql://homeassistant:homeassistant@postgres/homeassistant
+  purge_keep_days: 30
+  commit_interval: 1
+
+# HTTP Server
+http:
+  server_port: 8123
+  server_host: 0.0.0.0
+  cors_allowed_origins:
+    - http://localhost:3000
+    - https://your-ios-app.com
+
+
+
+# Presence Detection
+device_tracker:
+  - platform: ping
+    consider_home: 180
+    scan_interval: 30
+    hosts:
+      phone_1: 192.168.1.10
+      phone_2: 192.168.1.11
+
+
+# Existing Devices Integration
+
+switch:
+  - platform: rest
+    name: "Soundbar Input"
+    resource: http://192.168.0.97:3000/arc
+    
+
+# HomeKit Integration
+homekit:
+  port: 51608
+  name: Homebridge 4F68
+  pin: "457-64-408"

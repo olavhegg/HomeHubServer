@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "olav_heggelund",
+        "name": "Olav Heggelund",
+        "user_id": "010962a00be247fbbbd5f03e7906dffb",
+        "device_trackers": [],
+        "picture": "/api/image/serve/8df1ae4b92c36da676f04ff24d0216e3/512x512"
+      },
+      {
+        "id": "fredrik_aasland",
+        "name": "Fredrik Aasland",
+        "device_trackers": [],
+        "user_id": "9de08dc7f96d4b069c021c932ef1a3b0",
+        "picture": "/api/image/serve/3e7c4239b8c3dd9b2610b5f101071b55/512x512"
+      }
+    ]
+  }
+}
